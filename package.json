@@ -1,0 +1,23 @@
+{
+  "name": "newapp",
+  "version": "1.0.0",
+  "description": "A sample Express project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tushar Maurya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.0.0-rc0",
+    "request": "^2.83.0",
+    "twilio": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.5"
+  }
+}
