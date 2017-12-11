@@ -13,6 +13,7 @@ npm install</br>
 npm install cookie-parser</br>
 npm install body-parser</br>
 npm install request</br>
+npm install sync-request</br>
 
 Week 1 Task:</br>
 
