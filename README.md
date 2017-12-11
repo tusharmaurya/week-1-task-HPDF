@@ -29,25 +29,25 @@ b) fetches a list of posts from a request to https://jsonplaceholder.typicode.co
 c) Respond with only​ a list of authors and the count of their posts (a newline for each author).
 </br>
 Steps for execution:</br>
-Go to browser and open http://127.0.0.1:5000/authors and output will be displayed.</br>
+Go to browser and open http://127.0.0.1:8080/authors and output will be displayed.</br>
 
 3.Set a simple cookie (if it has not already been set) at http://localhost:8080/setcookie​ with the following values: name= and age=.
 Fetch the set cookie with http://localhost:8080/getcookies​ and display the stored key-values in it.</br>
 
 Steps for execution:</br></br>
-Go to browser and open http://127.0.0.1:5000/setcookie and cookie will be set.</br>
-Click the link to go to http://127.0.0.1:5000/getcookie and cookie's key-value will be displayed.</br>
+Go to browser and open http://127.0.0.1:8080/setcookie and cookie will be set.</br>
+Click the link to go to http://127.0.0.1:8080/getcookie and cookie's key-value will be displayed.</br>
 Deny requests to your http://localhost:8080/robots.txt​ page. (or you can use the response at http://httpbin.org/deny if needed)</br>
 
 Steps for execution:</br>
-Go to browser and open http://127.0.0.1:5000/robots.txt and response at http://httpbin.org/deny will be displayed.</br>
+Go to browser and open http://127.0.0.1:8080/robots.txt and response at http://httpbin.org/deny will be displayed.</br>
 Render an HTML page at http://localhost:8080/html​ or an image at http://localhost:8080/image​.
 </br></br>
 Steps for execution:
-Go to browser and open http://127.0.0.1:5000/html and a html page will be rendered.</br>
+Go to browser and open http://127.0.0.1:8080/html and a html page will be rendered.</br>
 A text box at http://localhost:8080/input​ which sends the data as POST to any endpoint of your choice. This endpoint should log the received the received to stdout.</br>
 
 Steps for execution:</br>
-Go to browser and open http://127.0.0.1:5000/input.</br>
+Go to browser and open http://127.0.0.1:8080/input.</br>
 There will be one text box. Enter your data in it and hit enter.</br>
 Output in console.</br>
