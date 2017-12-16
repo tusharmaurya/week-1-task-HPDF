@@ -15,44 +15,34 @@ app.get('/', function (req, res) {
 var cookie_name = "Tushar";
 var cookie_value = 21;
 
-var url1='https://jsonplaceholder.typicode.com/users';
-var url2='https://jsonplaceholder.typicode.com/posts';
 
-var authorArr = [];
-var postArr = [];
-
-app.get('/authors', function(req, res){
-  request({
-    url: url1,
-    json: true
-  }, function (error, response, body1) {
-      if (!error && response.statusCode === 200) {
-        //console.log(body1)
-        //console.log(JSON.username);
-        //res.send(body1) // Print the json response
-        for(var x in body1){
-  			authorArr.push(body1[x]);
-  			//console.log("pushing authors");
-			}
-		}
-  })
-
-  request({
-    url: url1,
-    json: true
-  }, function (error, response, body2) {
-      if (!error && response.statusCode === 200) {
-        //console.log(body1)
-        //console.log(JSON.username);
-        //res.send(body1) // Print the json response
-        for(var x in body2){
-  			postArr.push(body2[x]);
-  			//console.log("pushing posts");
-			}
-		}
-  })
-
-
+var author,count1,count2,article;
+app.get("/authors",function(req,res){
+     var w="<html><ol>";
+  request('https://jsonplaceholder.typicode.com/users', function (error, response, body) {
+    console.log('error:', error);
+    console.log('statusCode:', response && response.statusCode);
+    author = JSON.parse(body);
+    count1 = author.length;
+  });
+  request('https://jsonplaceholder.typicode.com/posts', function (error, response, body) {
+    console.log('error:',error);
+    console.log('statusCode:',response && response.statusCode);
+    article = JSON.parse(body);
+    count2 = article.length;
+  });
+  for(var i=0;i<count1;i++){
+    var count3=0;
+    for(var j=0;j<count2;j++){
+      if(article[j].userId=== (i+1)){
+        count3++;
+      }
+    }
+    var m = author[i].name;
+    w=w+`<li> ${m}: ${count3}</li>`;
+  };
+  w=w+"</ol></html>";
+  res.send(w);
 });
 
 app.get('/setCookie',function (req, res){
