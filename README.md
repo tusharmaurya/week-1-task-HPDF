@@ -36,8 +36,8 @@ Fetch the set cookie with http://localhost:8080/getcookies​ and display the st
 
 Steps for execution:</br></br>
 Go to browser and open http://127.0.0.1:8080/setcookie and cookie will be set.</br>
-Click the link to go to http://127.0.0.1:8080/getcookie and cookie's key-value will be displayed.</br>
-Deny requests to your http://localhost:8080/robots.txt​ page. (or you can use the response at http://httpbin.org/deny if needed)</br>
+Click the link to go to http://127.0.0.1:8080/getcookie and cookie's key-value will be displayed on the console.</br>
+</br>Deny requests to your http://localhost:8080/robots.txt​ page. (or you can use the response at http://httpbin.org/deny if needed)</br>
 
 Steps for execution:</br>
 Go to browser and open http://127.0.0.1:8080/robots.txt and response at http://httpbin.org/deny will be displayed.</br>
